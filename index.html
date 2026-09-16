@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minhas Tarefas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Minhas Tarefas</h1>
+        <p id="contador">Pendentes: 0</p>
+
+        <!-- Container para o input, seleção de prioridade e botão -->
+        <div class="input-container">
+            <input type="text" id="campo-de-tarefa" placeholder="Digite uma tarefa...">
+            
+            <select id="select-prioridade">
+                <option value="baixa">Baixa</option>
+                <option value="media" selected>Média</option>
+                <option value="alta">Alta</option>
+            </select>
+
+            <button id="btn-adicionar">Adicionar</button>
+        </div>
+
+        <!-- Filtros de visibilidade -->
+        <div class="filtros">
+            <button class="btn-filtro ativo" data-filtro="todas">Todas</button>
+            <button class="btn-filtro" data-filtro="pendentes">Pendentes</button>
+            <button class="btn-filtro" data-filtro="concluidas">Concluídas</button>
+        </div>
+
+        <!-- Lista dinâmica de tarefas -->
+        <ul id="lista-de-tarefas"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,144 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Caixinha centralizada (Card) */
+.container {
+    background-color: #1e1e1e;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    max-width: 400px;
+}
+
+h1 {
+    margin-top: 0;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+/* Campo de digitação e botão */
+input {
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #333;
+    background-color: #2a2a2a;
+    color: #fff;
+    outline: none;
+    width: 65%;
+}
+
+button#btn-adicionar {
+    padding: 10px 12px;
+    border-radius: 6px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Lista e Itens */
+ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+li {
+    background-color: #2a2a2a;
+    padding: 10px 15px;
+    margin-bottom: 8px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+li button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+/* Tarefa concluída */
+.concluida {
+    text-decoration: line-through;
+    color: #888888;
+}
+.filtros {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.btn-filtro {
+    background-color: #2a2a2a;
+    color: #888;
+    border: 1px solid #333;
+    padding: 6px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.85rem;
+    transition: all 0.3s ease;
+}
+
+.btn-filtro.ativo, .btn-filtro:hover {
+    background-color: #007bff;
+    color: #fff;
+    border-color: #007bff;
+}
+.input-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.input-container input {
+    flex: 1;
+}
+
+.filtros {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.btn-filtro {
+    flex: 1;
+    text-align: center;
+}
+/* Estilização do select de prioridades */
+#select-prioridade {
+    background-color: #2a2a2a;
+    color: #fff;
+    border: 1px solid #333;
+    border-radius: 6px;
+    padding: 0 10px;
+    outline: none;
+    cursor: pointer;
+}
+
+/* Indicadores de Prioridade nos itens da lista */
+li.prioridade-alta {
+    border-left: 5px solid #ff4d4d; /* Vermelho */
+}
+
+li.prioridade-media {
+    border-left: 5px solid #ffaa00; /* Amarelo/Laranja */
+}
+
+li.prioridade-baixa {
+    border-left: 5px solid #28a745; /* Verde */
+}
